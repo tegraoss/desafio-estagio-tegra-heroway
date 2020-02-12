@@ -1,5 +1,7 @@
 # Desafio Estágio - Tegra + Heroway
 
+<link rel="shortcut icon" type="image/x-icon" href="tegra.ico">
+
 Bem vindo ao Desafio para estágio na Tegra.
 
 Essa desafio é focado no desenvolvimento front-end, segundo conteúdo ministrado pela Heroway.
