@@ -10,7 +10,6 @@ Essa desafio é focado no desenvolvimento front-end, segundo conteúdo ministrad
 ​
 <img src="tegra.png" alt="Logo Tegra" width="250" />
 
-
 ## Objetivo​
 
 Desenvolver uma Single Page Application (SPA) para a busca de voos.
@@ -38,6 +37,7 @@ Extras:
 ​
 Para desenvolver os requisitos acima, você deverá consumir as seguintes APIs:
 ​
+
 **Lista de Aeroportos:**
 
  ```js
@@ -48,6 +48,7 @@ Para desenvolver os requisitos acima, você deverá consumir as seguintes APIs:
  Essa API te disponibilizará os dados necessários para que o usuario possa selecionar o `Aeroporto de Origem` e o `Aeroporto de Destino`.
 ​
 ​
+
 **Lista de Vôos:**
 
  ```js
@@ -60,7 +61,7 @@ Para desenvolver os requisitos acima, você deverá consumir as seguintes APIs:
   }
  ```
 
-Essa API te disponibilizará a lista de vôos disponíveis dado `Aeroporto de Origem`, `Aeroporto de Destino` e `Data de Partida`.
+Essa API te disponibilizará a lista de vôos disponíveis dado `Aeroporto de Origem`,  `Aeroporto de Destino` e `Data de Partida`.
 ​
 
 **Atenção:** Só existem dados na API entre: `2019-02-10` e `2019-02-18`.
