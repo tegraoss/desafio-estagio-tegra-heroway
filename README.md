@@ -6,8 +6,10 @@
 Olá Hero, bem vindo ao Desafio para estágio na Tegra.
 
 Essa desafio é focado no desenvolvimento front-end, segundo conteúdo ministrado pela Heroway.
+
 ​
 <img src="tegra.png" alt="Logo Tegra" width="250" />
+
 
 ## Objetivo​
 
