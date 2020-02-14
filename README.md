@@ -20,8 +20,8 @@ Desenvolver uma Single Page Application (SPA) para a busca de voos.
 Sua aplicação deve:
 
 - Ser desenvolvida utilizando `Typescript`, `React` e `Redux`.
-- Conter uma tela onde o usuário possa selecionar o `Aeroporto de Origem`, `Aeroporto de Destino` e a `Data de Partida`.
-- Exibir uma lista de vôos.
+- Conter uma tela onde o usuário possa selecionar o `Aeroporto de Origem`, `Aeroporto de Destino` e a `Data de Partida`, através de Dropdowns ou Pickers
+- Exibir uma lista de vôos
 ​
 
 Extras:
@@ -61,21 +61,19 @@ Para desenvolver os requisitos acima, você deverá consumir as seguintes APIs:
 Essa API te disponibilizará a lista de vôos disponíveis dado `Aeroporto de Origem`, `Aeroporto de Destino` e `Data de Partida`.
 ​
 
-**Atenção:** Só existem dados na API entre: `2019-02-10` até: `2019-02-18`.
+**Atenção:** Só existem dados na API entre: `2019-02-10` e `2019-02-18`.
 ​
 
 ## Entrega
 
-​
-
-A entrega deve ser feita em um repositório no GitHub, que deve conter:
+A entrega deve ser feita em um repositório público no GitHub, que deve conter:
 ​
 
 - O código do projeto
 - Um arquivo **README** que descreva o que foi feito e as etapas para rodar o projeto
-- Enviar o link do repositório para o seguinte email: **estagio@tegra.com.br**. No assunto, descrever "Desafio Estágio Heroway". Não esqueça de identificar o seu nome completo no corpo do email, também.
+- Enviar o link do repositório para o seguinte email: **estagio@tegra.com.br**. No assunto, indicar "Desafio Estágio Heroway". Não esqueça de identificar o seu nome completo no corpo do email também.
+
 ​
 **Importante:** Não se preocupe se não conseguir entregar todos os requisitos: dê o seu melhor! :muscle:
-​
 
 Boa sorte, Hero! =)
