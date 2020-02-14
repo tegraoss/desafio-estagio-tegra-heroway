@@ -1,70 +1,81 @@
+
 # Desafio Estágio - Tegra + Heroway
 
 <link rel="shortcut icon" type="image/x-icon" href="tegra.ico">
 
-Bem vindo ao Desafio para estágio na Tegra.
+Olá Hero, bem vindo ao Desafio para estágio na Tegra.
 
 Essa desafio é focado no desenvolvimento front-end, segundo conteúdo ministrado pela Heroway.
-
+​
 <img src="tegra.png" alt="Logo Tegra" width="250" />
 
-## Objetivo
+## Objetivo​
 
 Desenvolver uma Single Page Application (SPA) para a busca de voos.
+​
 
 ## Requisitos
 
+​
 Sua aplicação deve:
 
-- Ser desenvolvida em React
-- Conter uma tela onde o usuário possa selecionar o `Aeroporto de Origem`, `Aeroporto de Destino`, `Data de Saída`, através de Dropdowns ou Pickers
-- Exibir, após a busca, a lista de voos, sejam eles diretos ou com escalas
-- Possibilitar a ordenação por Preço Total ou por Tempo Total de voo
-- Calcular o preço total e o tempo total de voo, considerando as esperas entre as escalas
+- Ser desenvolvida utilizando `Typescript`, `React` e `Redux`.
+- Conter uma tela onde o usuário possa selecionar o `Aeroporto de Origem`, `Aeroporto de Destino` e a `Data de Partida`.
+- Exibir uma lista de vôos.
+​
 
-## API para requisição aos dados
+Extras:
 
-Temos disponível a seguinte API para a requisição dos dados
+- Possibilitar a ordenação por `preço total`.
+- Possibilitar a ordenação por `tempo total de vôo`.
+- Calcular o `preço total` e o `tempo total de vôo`, considerando as esperas entre as escalas.
+​
 
-- A lista de aeroportos pode ser obtida com um GET da URL `https://api-voadora.dev.tegra.com.br/flight/companies`
-- A lista de voos por dia é um POST na `https://api-voadora.dev.tegra.com.br/flight`, com o Body seguindo este padrão em JSON:
+## API
 
-  ```json
-  {
-    "from": "BSB",
-    "to": "VCP",
-    "date": "2019-02-10"
+​
+Para desenvolver os requisitos acima, você deverá consumir as seguintes APIs:
+​
+**Lista de Aeroportos:**
+
+ ```js
+ const method = 'GET';
+ const url = 'https://api-voadora.dev.tegra.com.br/flight/companies';
+ ```
+
+ Essa API te disponibilizará os dados necessários para que o usuario possa selecionar o `Aeroporto de Origem` e o `Aeroporto de Destino`.
+​
+​
+**Lista de Vôos:**
+
+ ```js
+ const method = 'POST';
+ const url = 'https://api-voadora.dev.tegra.com.br/flight';
+ const body = {
+    from: 'BSB', // aeroporto de origem
+    to: 'VCP', // aeroporto de destino
+    date: '2019-02-10' // data de partida
   }
-  ```
+ ```
 
-- **ATENÇÃO:** Só existem dados na API do intervalo do dia 10/02/2019 ao dia 18/02/2019
+Essa API te disponibilizará a lista de vôos disponíveis dado `Aeroporto de Origem`, `Aeroporto de Destino` e `Data de Partida`.
+​
 
-## Extras
-
-Caso deseje, você pode incluir no seu teste outros recursos que julgar necessário. Abaixo temos alguns exemplos, mas não fique limitado a eles:
-
-- Typescript
-- RxJs
-- Redux
-- CSS customizado
+**Atenção:** Só existem dados na API entre: `2019-02-10` até: `2019-02-18`.
+​
 
 ## Entrega
 
-A entrega deve ser feita em um repositório no Github, público. Que deve conter:
+​
+
+A entrega deve ser feita em um repositório no GitHub, que deve conter:
+​
 
 - O código do projeto
-- Um arquivo **README** que descreva as etapas e dependências para rodar o projeto
+- Um arquivo **README** que descreva o que foi feito e as etapas para rodar o projeto
+- Enviar o link do repositório para o seguinte email: **estagio@tegra.com.br**. No assunto, descrever "Desafio Estágio Heroway". Não esqueça de identificar o seu nome completo no corpo do email, também.
+​
+**Importante:** Não se preocupe se não conseguir entregar todos os requisitos: dê o seu melhor! :muscle:
+​
 
-**TODO: definir o email para que o candidato envie o projeto finalizado**
-
-Não se preocupe se não conseguir entregar todos os requisitos: dê o seu melhor! :muscle:
-
-## Exemplos de interfaces
-
-Para inspirar o desenvolvimento da tela, aqui estão alguns exemplos de interfaces:
-
-<img src="exemplo-kayak.png" alt="Exemplo interface Kayak" />
-
-<img src="exemplo-maxmilhas.png" alt="Exemplo interface MaxMilhas" />
-
-<img src="exemplo-viajanet.png" alt="Exemplo interface ViajaNet" />
+Boa sorte, Hero! =)
